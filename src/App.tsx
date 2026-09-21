@@ -29,6 +29,7 @@ import { AddListingModal } from './components/modals/AddListingModal';
 
 import { propertiesData } from './data/properties';
 import { FilterState, Property } from './types';
+import { WhatsAppButton } from './components/ui/WhatsAppButton';
 
 export const App: React.FC = () => {
   // Favorites state
@@ -279,6 +280,9 @@ export const App: React.FC = () => {
         isOpen={isAddListingOpen}
         onClose={() => setIsAddListingOpen(false)}
       />
+
+      {/* Floating WhatsApp Quick Contact Button */}
+      <WhatsAppButton />
     </div>
   );
 };
